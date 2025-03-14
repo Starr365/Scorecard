@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Basketball Scorecard</title>
+</head>
+<body>
+   <div class="container">
+        <div class="home">
+            <h4>HOME</h4>
+            <div class="score">
+                <div class="points" id="points-home"></div>
+            </div>
+            <div class="add-points">
+                <button onclick="increaseByOne()">+1</button>
+                <button onclick="increaseByTwo()">+2</button>
+                <button onclick="increaseByThree()">+3</button>
+            </div>
+        </div>
+        <div class="guest">
+            <h4>GUEST</h4>
+            <div class="score">
+                <div class="points" id="guest-points"></div>
+            </div>
+            <div class="add-points">
+                <button onclick="increaseGuestByOne()">+1</button>
+                <button onclick="increaseGuestByTwo()">+2</button>
+                <button onclick="increaseGuestByThree()">+3</button>
+            </div>
+        </div>
+        <div class="reset"><button id="reset-game" onclick="resetScores()">New Game</button></div>
+   </div>
+</body>
+<script src="index.js"></script> 
+</html>
